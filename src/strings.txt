@@ -19,6 +19,6 @@ PLUGIN_CZ
 	EN	Czech
 	CS	České
 
-PLUGIN_POSLOUCHEJ_RADA_DESC
+PLUGIN_POSLOUCHEJ_RADIA_DESC
 	EN	Plugin allows to stream slovak and czech radio stations
 	CS	Plugin umožňuje počúvať slovenské a české rádiové stanice
