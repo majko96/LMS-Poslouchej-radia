@@ -1,0 +1,24 @@
+PLUGIN_POSLOUCHEJ_RADIA
+	EN	Poslouchej rádia
+
+PLUGIN_STATES
+	EN	States
+	CS	Štáty
+
+PLUGIN_TOPSTATIONS_SK
+	EN	TOP 10 SK
+
+PLUGIN_TOPSTATIONS_CZ
+	EN	TOP 10 CZ
+
+PLUGIN_SK
+	EN	Sovak
+	CS	Slovenské
+
+PLUGIN_CZ
+	EN	Czech
+	CS	České
+
+PLUGIN_POSLOUCHEJ_RADA_DESC
+	EN	Plugin allows to stream slovak and czech radio stations
+	CS	Plugin umožňuje počúvať slovenské a české rádiové stanice

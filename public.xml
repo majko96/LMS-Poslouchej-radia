@@ -1,0 +1,17 @@
+<extensions>
+  <details>
+    <title lang="EN">Poslouchej rádia</title>
+  </details>
+  <plugins>
+    <plugin name="NewShoutcast" version="1.0.1" minTarget="7.7" maxTarget="*">
+      <title lang="EN">Poslouchej rádia</title>
+      <desc lang="EN">Plugin allows to stream slovak and czech radio stations</desc>
+      <url>
+      </url>
+      <link>https://github.com/majko96/LMS-Poslouchej-radia</link>
+      <sha></sha>
+      <creator>majko96</creator>
+      <email>mr.babinec@gmail.com</email>
+    </plugin>
+  </plugins>
+</extensions>
