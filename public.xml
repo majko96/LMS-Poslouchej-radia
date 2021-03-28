@@ -3,7 +3,7 @@
     <title lang="EN">Poslouchej rádia</title>
   </details>
   <plugins>
-    <plugin name="NewShoutcast" version="1.0.1" minTarget="7.7" maxTarget="*">
+    <plugin name="NewShoutcast" version="1.0.2" minTarget="7.7" maxTarget="*">
       <title lang="EN">Poslouchej rádia</title>
       <desc lang="EN">Plugin allows to stream slovak and czech radio stations</desc>
       <url>
