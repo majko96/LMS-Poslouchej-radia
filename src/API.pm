@@ -66,4 +66,18 @@ sub topCzStations {
 		},
 	)->post($url,'Content-Type' => 'application/json','Content-Length' => 0);
 }
+
+sub rockStations {
+	my ( $class, $cb, $args ) = @_;
+	$log->debug("get topCzStations");
+	my $url = API_URL . "getRock";
+	Slim::Networking::SimpleAsyncHTTP->new(
+		sub {
+			my $response = shift;
+			my $result = eval { decode_json($response->content) };
+			$result ||= {};
+			$cb->($result->{stanice});
+		},
+	)->post($url,'Content-Type' => 'application/json','Content-Length' => 0);
+}
 1;

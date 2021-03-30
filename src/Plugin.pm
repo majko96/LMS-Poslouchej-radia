@@ -50,6 +50,7 @@ sub toplevel {
     { name => cstring($client, 'PLUGIN_STATES'), type => 'url', url => \&menuHandler, icon => ICON_PATH },
 		{ name => cstring($client, 'PLUGIN_TOPSTATIONS_SK'), type => 'url', url => \&topStationsHandler, icon => ICON_PATH },
     { name => cstring($client, 'PLUGIN_TOPSTATIONS_CZ'), type => 'url', url => \&topCZStationsHandler, icon => ICON_PATH },
+		{ name => cstring($client, 'PLUGIN_ROCK'), type => 'url', url => \&rockHandler, icon => ICON_PATH },
 	]);
 }
 
@@ -104,6 +105,15 @@ sub topStationsHandler {
 	my ($client, $cb, $args, $params) = @_;
 	$log->debug("PoslouchejRadio topStationsHandler");
 	Plugins::PoslouchejRadia::API->topSkStations( sub {
+		my $stations = shift;
+		getStations($stations, $cb);
+	});
+}
+
+sub rockHandler {
+	my ($client, $cb, $args, $params) = @_;
+	$log->debug("PoslouchejRadio topStationsHandler");
+	Plugins::PoslouchejRadia::API->rockStations( sub {
 		my $stations = shift;
 		getStations($stations, $cb);
 	});
