@@ -19,7 +19,7 @@ sub skStations {
 			my $response = shift;
 			my $result = eval { decode_json($response->content) };
 			$result ||= {};
-			$cb->($result->{stanice});
+			$cb->($result);
 		},
 	)->post($url,'Content-Type' => 'application/json','Content-Length' => 0);
 }
@@ -34,7 +34,7 @@ sub czStations {
 			my $response = shift;
 			my $result = eval { decode_json($response->content) };
 			$result ||= {};
-			$cb->($result->{stanice});
+			$cb->($result);
 		},
 	)->post($url,'Content-Type' => 'application/json','Content-Length' => 0);
 }
@@ -48,7 +48,7 @@ sub topSkStations {
 			my $response = shift;
 			my $result = eval { decode_json($response->content) };
 			$result ||= {};
-			$cb->($result->{stanice});
+			$cb->($result);
 		},
 	)->post($url,'Content-Type' => 'application/json','Content-Length' => 0);
 }
@@ -62,7 +62,7 @@ sub topCzStations {
 			my $response = shift;
 			my $result = eval { decode_json($response->content) };
 			$result ||= {};
-			$cb->($result->{stanice});
+			$cb->($result);
 		},
 	)->post($url,'Content-Type' => 'application/json','Content-Length' => 0);
 }
@@ -76,7 +76,7 @@ sub rockStations {
 			my $response = shift;
 			my $result = eval { decode_json($response->content) };
 			$result ||= {};
-			$cb->($result->{stanice});
+			$cb->($result);
 		},
 	)->post($url,'Content-Type' => 'application/json','Content-Length' => 0);
 }

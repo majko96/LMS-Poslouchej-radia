@@ -3,7 +3,7 @@
   <module>Plugins::PoslouchejRadia::Plugin</module>
   <description>PLUGIN_POSLOUCHEJ_RADIA_DESC</description>
   <creator>majko96</creator>
-  <version>1.0.5</version>
+  <version>1.1.0</version>
   <defaultState>enabled</defaultState>
   <homepageURL>https://www.xbmc-kodi.cz/prispevek-poslouchej-radio-doplnek</homepageURL>
   <icon>plugins/PoslouchejRadia/html/images/icon.png</icon>
