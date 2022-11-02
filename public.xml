@@ -3,12 +3,12 @@
     <title lang="EN">Poslouchej rádia</title>
   </details>
   <plugins>
-    <plugin name="PoslouchejRadia" version="1.0.5" minTarget="7.7" maxTarget="*">
+    <plugin name="PoslouchejRadia" version="1.1.0" minTarget="7.7" maxTarget="*">
       <title lang="EN">Poslouchej rádia</title>
       <desc lang="EN">Plugin allows to stream slovak and czech radio stations</desc>
-      <url>https://github.com/majko96/LMS-Poslouchej-radia/releases/download/1.0.7/PoslouchejRadia-1.0.7.zip</url>
+      <url>https://github.com/majko96/LMS-Poslouchej-radia/releases/download/1.1.0/PoslouchejRadia-1.1.0.zip</url>
       <link>https://github.com/majko96/LMS-Poslouchej-radia</link>
-      <sha>3128c9854b860bd3dbc1ac165af965177bfd67c0</sha>
+      <sha>0caea7b6fefde5bbb528662858ab511baa9b0e93</sha>
       <creator>majko96</creator>
       <email>mr.babinec@gmail.com</email>
     </plugin>
