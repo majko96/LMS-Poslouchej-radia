@@ -127,7 +127,7 @@ sub getStations {
 	my $items = [];
 	for $station ( @stations ) {
 		push @$items, {
-			name 		=> $station->{nazov},
+			name 		=> $station->{title},
 			type 		=> 'audio',
 			url  		=> $station->{url},
       icon    => $station->{img},

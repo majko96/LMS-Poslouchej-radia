@@ -5,7 +5,7 @@ use strict;
 use JSON::XS::VersionOneAndTwo;
 use Slim::Utils::Log;
 use Slim::Utils::Prefs;
-use constant API_URL => 'https://moj-dennik.eu/api/';
+use constant API_URL => 'https://radia.moj-dennik.eu/api/get-stations';
 
 my $prefs = preferences('plugin.poslouchej.radia');
 my $log   = logger('plugin.poslouchej.radia');
@@ -13,7 +13,7 @@ my $log   = logger('plugin.poslouchej.radia');
 sub skStations {
 	my ( $class, $cb, $args ) = @_;
 	$log->debug("get skStations");
-	my $url = API_URL . "getSK";
+	my $url = API_URL . "?country=sk";
 	Slim::Networking::SimpleAsyncHTTP->new(
 		sub {
 			my $response = shift;
@@ -28,7 +28,7 @@ sub skStations {
 sub czStations {
 	my ( $class, $cb, $args ) = @_;
 	$log->debug("get czStations");
-	my $url = API_URL . "getCZ";
+	my $url = API_URL . "?country=cz";
 	Slim::Networking::SimpleAsyncHTTP->new(
 		sub {
 			my $response = shift;
@@ -42,7 +42,7 @@ sub czStations {
 sub topSkStations {
 	my ( $class, $cb, $args ) = @_;
 	$log->debug("get topSkStations");
-	my $url = API_URL . "getTopSK";
+	my $url = API_URL . "?country=sk&top=1";
 	Slim::Networking::SimpleAsyncHTTP->new(
 		sub {
 			my $response = shift;
@@ -56,7 +56,7 @@ sub topSkStations {
 sub topCzStations {
 	my ( $class, $cb, $args ) = @_;
 	$log->debug("get topCzStations");
-	my $url = API_URL . "getTopCZ";
+	my $url = API_URL . "?country=cz&top=1";
 	Slim::Networking::SimpleAsyncHTTP->new(
 		sub {
 			my $response = shift;
@@ -69,8 +69,8 @@ sub topCzStations {
 
 sub rockStations {
 	my ( $class, $cb, $args ) = @_;
-	$log->debug("get topCzStations");
-	my $url = API_URL . "getRock";
+	$log->debug("get rockStations");
+	my $url = API_URL . "?style=rock";
 	Slim::Networking::SimpleAsyncHTTP->new(
 		sub {
 			my $response = shift;
