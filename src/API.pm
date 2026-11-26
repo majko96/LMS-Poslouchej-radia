@@ -5,7 +5,7 @@ use strict;
 use JSON::XS::VersionOneAndTwo;
 use Slim::Utils::Log;
 use Slim::Utils::Prefs;
-use constant API_URL => 'https://radia.moj-dennik.eu/api/get-stations';
+use constant API_URL => 'https://radia.vo.superhost.sk/api/get-stations';
 
 my $prefs = preferences('plugin.poslouchej.radia');
 my $log   = logger('plugin.poslouchej.radia');
